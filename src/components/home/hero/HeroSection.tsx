@@ -11,7 +11,7 @@ export default function HeroSection() {
       id="home"
       className="h-screen relative flex justify-center items-center overflow-hidden flex-col"
     >
-      <div style={{ width: "100%", height: "600px", position: "relative" }}>
+      <div style={{ width: "100%", height: "100%", position: "absolute", inset: 0 }}>
         <Particles
           particleColors={["#ffffff"]}
           particleCount={200}
