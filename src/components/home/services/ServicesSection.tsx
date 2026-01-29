@@ -25,7 +25,7 @@ export default function ServicesSection() {
         <ServiceCard
           name="Development"
           icon="/images/s4.png"
-          description="Full-stack development with modern frameworks and best practices"
+          description="Full-stack development with modern frameworks and best practices."
           />
       </div>
     </section>
