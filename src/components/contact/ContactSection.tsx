@@ -29,7 +29,7 @@ export default function ContactSection() {
   return (
     <section id="contact" className="py-16 lg:py-30">
       <div className="w-[90%] md:w-[80%] lg:w-[70%] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-12">
-        <div>
+        <div data-aos="fade-right">
           <h2 className="py-3 text-3xl md:text-4xl font-bold tracking-wide text-transparent bg-clip-text bg-linear-to-r from-indigo-500 to-gray-300">
             Ready to Collaborate?
           </h2>
@@ -59,7 +59,7 @@ export default function ContactSection() {
         </div>
 
         {/* form */}
-        <div>
+        <div data-aos="zoom-in">
           <form className="rounded-lg bg-slate-900 px-4 py-8">
             <input type="text" placeholder="Your Name" className={InputStyles} required />
             <input type="text" placeholder="Your Email" className={InputStyles} required />

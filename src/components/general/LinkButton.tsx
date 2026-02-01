@@ -10,6 +10,10 @@ interface LinkButtonProps {
   rounded?:boolean,
   download?: boolean,
 
+  // aos Animation
+  animate?:boolean,
+  aosType?:string,
+  aosDelay?:number,
 }
 
 export default function LinkButton({
@@ -19,9 +23,17 @@ export default function LinkButton({
   iconPosition = "right",
   rounded,
   download = false,
+  animate = false,
+  aosType = "fade-up",
+  aosDelay = 0,
 }:LinkButtonProps) {
   return (
-    <Link href={href} download={download} className={`px-8 py-3
+    <Link
+    {...(animate && {
+      "data-aos":aosType,
+      "data-aos-delay":aosDelay
+    })}
+    href={href} download={download} className={`px-8 py-3
     bg-linear-to-r from-blue-900 to-purple-800
     hover:from-blue-800 hover:to-purple-700
     text-white font-medium
