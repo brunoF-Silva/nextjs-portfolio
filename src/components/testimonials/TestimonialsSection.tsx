@@ -38,6 +38,8 @@ export default function TestimonialsSection() {
           {testimonials.map((testimonial, index) => {
             return (
               <div
+                data-aos="fade-right"
+                data-aos-delay={index * 100}
                 key={index}
                 className="bg-gray-800 border border-gray-700 rounded-xl p-6 shadow-lg"
               >
