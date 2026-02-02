@@ -33,7 +33,9 @@ export default function Navbar() {
     }
   },[])
   return (
-    <nav className={`h-18 fixed z-50 w-full transition-all duration-300 ${navBackground ? "bg-slate-900 shadow-md" : ""}`}>
+    <nav
+      className={`h-18 fixed z-50 w-full transition-all duration-300 ${navBackground ? "bg-slate-900 shadow-md" : ""}`}
+    >
       <div className="flex items-center h-full justify-between w-[90%] mx-auto">
         {/* logo */}
         <Logo />
@@ -71,7 +73,7 @@ export default function Navbar() {
           {navOpen ? <LuX size={30} /> : <LuMenu size={30} />}
         </button>
 
-        <MobileNav navOpen={navOpen} />
+        <MobileNav navOpen={navOpen} setNavOpen={setNavOpen} />
       </div>
     </nav>
   );
