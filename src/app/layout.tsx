@@ -3,11 +3,12 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/general/navbar/Navbar";
 import Footer from "@/components/footer/Footer";
+import ScrollToTopButton from "@/components/general/ScrollToTopButton";
 
 const poppins = Poppins({
   variable: "--font-geist-sans",
   subsets: ["latin"],
-  weight:["300", "400", "500", "600", "700"]
+  weight: ["300", "400", "500", "600", "700"],
 });
 
 export const metadata: Metadata = {
@@ -22,12 +23,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${poppins.className} antialiased bg-slate-950`}
-      >
-        <Navbar/>
+      <body className={`${poppins.className} antialiased bg-slate-950`}>
+        <Navbar />
         {children}
-        <Footer/>
+        <Footer />
+        <ScrollToTopButton />
       </body>
     </html>
   );
