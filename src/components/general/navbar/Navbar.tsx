@@ -41,7 +41,7 @@ export default function Navbar() {
         <Logo />
 
         {/* nav-links */}
-        <ul className="hidden lg:flex space-x-10">
+        <ul className="hidden xl:flex space-x-10">
           {navLinks.map((link) => {
             return (
               <li key={link.url}>
@@ -57,7 +57,7 @@ export default function Navbar() {
         </ul>
 
         {/* buttons */}
-        <div className="hidden lg:block">
+        <div className="hidden xl:block">
           <LinkButton
             href="/documents/cv_bruno_ferreira_da_silva.pdf"
             text="Download CV"
@@ -68,7 +68,7 @@ export default function Navbar() {
         </div>
         <button
           onClick={() => setNavOpen(!navOpen)}
-          className="w-8 h-8 cursor-pointer text-white z-100 lg:hidden"
+          className="w-8 h-8 cursor-pointer text-white z-100 xl:hidden"
         >
           {navOpen ? <LuX size={30} /> : <LuMenu size={30} />}
         </button>
