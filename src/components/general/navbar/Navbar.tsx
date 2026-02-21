@@ -10,9 +10,10 @@ export const navLinks = [
   { url: "#home", label: "Home" },
   { url: "#services", label: "Services" },
   { url: "#resume", label: "Resume" },
-  { url: "#´projects", label: "Projects" },
+  { url: "#projects", label: "Projects" },
   { url: "#skills", label: "Skills" },
   { url: "#testimonials", label: "Testimonials" },
+  { url: "#background", label: "Background" },
   { url: "#contact", label: "Contact" },
 ];
 
