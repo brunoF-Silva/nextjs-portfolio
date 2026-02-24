@@ -16,13 +16,13 @@ export default function ResumeSection() {
               icon={LuGraduationCap}
               role="Computer Science Degree"
               description="Bachelor of Science in Computer Science | Universidade Federal do Tocantins (UFT) | Focused on algorithms, data structures, software engineering principles, and web technologies."
-              date="Jan 2021 - June 2026"
+              date="July 2026"
             />
 
             <ResumeCard
               icon={LuBookOpen}
               role="Relevant Coursework"
-              description="Software Engineering, Systems Design, Web and Mobile Development, Database Systems, Human-Computer Interaction (HCI), Data Structures & Algorithms, Computer Networks, Operating Systems, Distributed Systems, Complex Networks, Graph Theory, OOP."
+              description="Software Engineering, Systems Design, Web and Mobile Development, Database Systems, Human-Computer Interaction (HCI), Data Structures & Algorithms, Computer Networks, Operating Systems, Distributed Systems, Complex Networks, Security and System Auditing, Graph Theory, OOP."
             />
 
             <ResumeCard
@@ -47,7 +47,7 @@ export default function ResumeSection() {
             <ResumeCard
               icon={LuServer}
               role="Backend Developer"
-              description="Building scalable APIs, databases, and server infrastructure. Experienced with Node.js, Python, cloud services, and microservices architecture."
+              description="Building scalable APIs, databases, and server infrastructure. Experienced with Python, NestJS, Node.js, cloud services, and microservices architecture."
             />
 
             <ResumeCard
