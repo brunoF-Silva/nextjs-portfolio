@@ -355,7 +355,7 @@ const slidesData = [
 //     </section>
 //   );
 // }
-export default function Slider() {
+export default function AboutSection() {
   const swiperInstanceRef = useRef<any>(null);
   const [isInView, setIsInView] = useState(false);
   const containerRef = useRef<HTMLDivElement | null>(null);
@@ -368,7 +368,7 @@ export default function Slider() {
           observer.disconnect();
         }
       },
-      { threshold: 0.5 },
+      { threshold: 1.0 },
     );
 
     if (containerRef.current) {
@@ -387,9 +387,9 @@ export default function Slider() {
   }, [isInView]);
 
   return (
-    <section id="background" className=" outer-frame py-6">
+    <section id="about" className=" outer-frame py-6">
       <div className="container" ref={containerRef}>
-        <Header title="A Little Bit About My Background" className="py-0" />
+        <Header title="Get to Know Me" className="py-0" />
 
         <div data-aos="fade-up" data-aos-duration="1500">
           <Swiper

@@ -281,7 +281,7 @@
 .category span {
   color: var(--primary-clr);
   /* font-size: 0.85rem; */
-  font-size: clamp(0.5rem, 4cqw, 0.85rem);
+  font-size: clamp(0.5rem, 3cqw, 0.85rem);
   /* font-size: 4cqw; */
   padding: 5px 8px;
   border: 1px solid rgba(255, 255, 255, 0.5);
