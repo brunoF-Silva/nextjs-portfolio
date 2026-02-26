@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import Link from "next/link";
 import Logo from "./Logo";
 import LinkButton from "../LinkButton";
@@ -6,12 +6,14 @@ import { LuDownload, LuMenu, LuX } from "react-icons/lu";
 import MobileNav from "./MobileNav";
 import { useEffect, useState } from "react";
 
+
 export const navLinks = [
   { url: "#home", label: "Home" },
   { url: "#services", label: "Services" },
   { url: "#resume", label: "Resume" },
   { url: "#projects", label: "Projects" },
   { url: "#skills", label: "Skills" },
+  { url: "#about", label: "About" },
   { url: "#testimonials", label: "Testimonials" },
   { url: "#contact", label: "Contact" },
 ];
@@ -22,16 +24,39 @@ export default function Navbar() {
 
   useEffect(() => {
     const navHandler = () => {
-      if(window.scrollY >= 90) setNavBackground(true);
-      if(window.scrollY < 90) setNavBackground(false);
-    }
+      if (window.scrollY >= 90) setNavBackground(true);
+      if (window.scrollY < 90) setNavBackground(false);
+    };
 
     window.addEventListener("scroll", navHandler);
 
     return () => {
       window.removeEventListener("scroll", navHandler);
+    };
+  }, []);
+
+  // The custom bypass for Cumulative Layout Shift (CLS)
+  const handleSmoothScroll = (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    url: string,
+  ) => {
+    e.preventDefault();
+
+    const targetId = url.replace("#", "");
+    const targetElement = document.getElementById(targetId);
+
+    if (targetElement) {
+      targetElement.scrollIntoView({ behavior: "smooth" });
+
+      // The "Double-Tap" to correct landing position after animations fire
+      setTimeout(() => {
+        targetElement.scrollIntoView({ behavior: "smooth" });
+      }, 400);
     }
-  },[])
+
+    setNavOpen(false);
+  };
+
   return (
     <nav
       className={`h-18 fixed z-50 w-full transition-all duration-300 ${navBackground ? "bg-slate-900 shadow-md" : ""}`}
@@ -46,8 +71,9 @@ export default function Navbar() {
             return (
               <li key={link.url}>
                 <Link
-                  className="text-gray-200 hover:text-cyan-300 cont-medium transition-colors duratio-300"
+                  className="text-gray-200 hover:text-cyan-300 font-medium transition-colors duration-300"
                   href={link.url}
+                  onClick={(e) => handleSmoothScroll(e, link.url)}
                 >
                   {link.label}
                 </Link>
@@ -66,9 +92,11 @@ export default function Navbar() {
             iconPosition="left"
           />
         </div>
+
+        {/* Mobile menu toggle button */}
         <button
           onClick={() => setNavOpen(!navOpen)}
-          className="w-8 h-8 cursor-pointer text-white z-100 xl:hidden"
+          className="slider-btn w-8 h-8 cursor-pointer text-white z-[100] xl:hidden"
         >
           {navOpen ? <LuX size={30} /> : <LuMenu size={30} />}
         </button>
