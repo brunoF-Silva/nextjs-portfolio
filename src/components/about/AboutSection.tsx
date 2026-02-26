@@ -368,7 +368,7 @@ export default function AboutSection() {
           observer.disconnect();
         }
       },
-      { threshold: 1.0 },
+      { threshold: 0.5 },
     );
 
     if (containerRef.current) {
@@ -389,7 +389,7 @@ export default function AboutSection() {
   return (
     <section id="about" className=" outer-frame py-6">
       <div className="container" ref={containerRef}>
-        <Header title="Get to Know Me" className="py-0" />
+        <Header title="Get to Know Me" />
 
         <div data-aos="fade-up" data-aos-duration="1500">
           <Swiper
@@ -428,13 +428,15 @@ export default function AboutSection() {
                       <div className="text-box">
                         <p>{slide.description}</p>
                       </div>
-
                     </div>
 
                     <div className="footer">
                       <div className="category">
                         {slide.categories.map((category, idx) => (
-                          <span key={idx} style={{ "--i": idx + 1 }}>
+                          <span
+                            key={idx}
+                            style={{ "--i": idx + 1 } as React.CSSProperties}
+                          >
                             {category}
                           </span>
                         ))}
