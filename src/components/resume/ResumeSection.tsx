@@ -16,7 +16,7 @@ export default function ResumeSection() {
               icon={LuGraduationCap}
               role="Computer Science Degree"
               description="Bachelor of Science in Computer Science | Universidade Federal do Tocantins (UFT) | Focused on algorithms, data structures, software engineering principles, and web technologies."
-              date="Juny 2026"
+              date="Jun 2026"
             />
 
             <ResumeCard
