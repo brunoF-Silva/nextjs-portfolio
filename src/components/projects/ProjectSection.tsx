@@ -32,10 +32,10 @@ export default function ProjectSection() {
         </div>
         <div data-aos="fade-left">
           <ProjectCard
-            imagePath="/images/react-calculator.png"
-            title="React Calculator"
-            description="A fully responsive calculator application powered by JavaScript and React, featuring a clean UI and optimized performance."
-            link="https://react-calculator-ten-ebon.vercel.app/"
+            imagePath="/images/aaa.png"
+            title="React Apple Store"
+            description="A fully responsive Apple products store application powered by TypeScript, React, and Tailwind CSS featuring a clean UI and optimized performance."
+            link="https://react-apple-products-store-rm1j.vercel.app/#"
           />
         </div>
       </div>

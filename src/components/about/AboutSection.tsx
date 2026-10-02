@@ -56,14 +56,6 @@ const slidesData = [
     categories: ["HCI", "UX", "UI"],
     link: "https://www.linkedin.com/in/bruno-silva-9629b6263",
   },
-  {
-    imgSrc: "images/slide7.jpg",
-    title: "Ready for the Next Challenge",
-    description:
-      "I currently work full-time as a stock clerk, dedicating my free time to programming and completing my computer science degree. I am highly motivated to transition fully into the tech industry and bring my strong work ethic to a development team.",
-    categories: ["Career-Transition", "Tech-Opportunity", "Future-Developer"],
-    link: "https://www.linkedin.com/in/bruno-silva-9629b6263",
-  },
 ];
 
 export default function AboutSection() {

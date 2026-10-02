@@ -9,12 +9,12 @@ const skills = [
   {
     name: "JavaScript",
     icon: <DiJavascript />,
-    skillLevel: 70,
+    skillLevel: 80,
   },
   {
     name: "React",
     icon: <DiReact />,
-    skillLevel: 80,
+    skillLevel: 90,
   },
   {
     name: "Next.js",
@@ -24,7 +24,7 @@ const skills = [
   {
     name: "NestJS",
     icon: <SiNestjs />,
-    skillLevel: 70,
+    skillLevel: 80,
   },
   {
     name: "Node.js",
@@ -34,17 +34,17 @@ const skills = [
   {
     name: "TypeScript",
     icon: <SiTypescript />,
-    skillLevel: 75,
+    skillLevel: 90,
   },
   {
     name: "TailWindCSS",
     icon: <RiTailwindCssFill />,
-    skillLevel: 75,
+    skillLevel: 90,
   },
   {
     name: "Python",
     icon: <DiPython />,
-    skillLevel: 80,
+    skillLevel: 90,
   },
 ];
 export default function SkillSection() {
