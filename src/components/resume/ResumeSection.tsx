@@ -16,7 +16,7 @@ export default function ResumeSection() {
               icon={LuGraduationCap}
               role="Computer Science Degree"
               description="Bachelor of Science in Computer Science | Universidade Federal do Tocantins (UFT) | Focused on algorithms, data structures, software engineering principles, and web technologies."
-              date="July 2026"
+              date="Juny 2026"
             />
 
             <ResumeCard
@@ -54,12 +54,6 @@ export default function ResumeSection() {
               icon={LuPackage}
               role="Fullstack Developer"
               description="End-to-end web developer bridging frontend and backend architectures. Refined practical skills at the UFT Software Factory and Federal Court of Tocantins."
-            />
-
-            <ResumeCard
-              icon={HiTrendingUp}
-              role="Ready for the Next Step"
-              description="Disciplined Stock Clerk refining coding skills. Ready to transition into a full-time developer role."
             />
           </div>
         </div>

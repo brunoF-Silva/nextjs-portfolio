@@ -85,7 +85,7 @@ export default function Navbar() {
         {/* buttons */}
         <div className="hidden xl:block">
           <LinkButton
-            href="/documents/cv_bruno_ferreira_da_silva.pdf"
+            href="/documents/resume_bruno_silva.pdf"
             text="Download CV"
             download
             icon={LuDownload}
